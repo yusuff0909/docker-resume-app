@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>John Doe - DevOps Portfolio</title>
+
+    <style>
+
+        body {
+
+            font-family: 'Arial', sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+
+            color: #fff;
+
+            min-height: 100vh;
+
+        }
+
+        .container {
+
+            max-width: 1000px;
+
+            margin: 0 auto;
+
+            padding: 40px;
+
+        }
+
+        .header {
+
+            text-align: center;
+
+            padding: 20px;
+
+            background: rgba(255, 255, 255, 0.1);
+
+            border-radius: 10px;
+
+            margin-bottom: 30px;
+
+        }
+
+        .section {
+
+            background: rgba(255, 255, 255, 0.05);
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            margin-bottom: 20px;
+
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        }
+
+        h1 {
+
+            color: #00d4ff;
+
+            margin: 0;
+
+            font-size: 2.5em;
+
+            background: linear-gradient(90deg, #00d4ff, #00b4d8);
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+            animation: fadeIn 1.5s ease-in-out;
+
+        }
+
+        h2 {
+
+            color: #00b4d8;
+
+            border-bottom: 2px solid #00b4d8;
+
+            padding-bottom: 10px;
+
+            position: relative;
+
+            display: inline-block;
+
+        }
+
+        h2::after {
+
+            content: '';
+
+            position: absolute;
+
+            width: 0;
+
+            height: 2px;
+
+            bottom: -2px;
+
+            left: 0;
+
+            background: #00d4ff;
+
+            transition: width 0.3s ease;
+
+        }
+
+        h2:hover::after {
+
+            width: 100%;
+
+        }
+
+        .skills-list {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+        }
+
+        .skill {
+
+            background: #00b4d8;
+
+            padding: 8px 15px;
+
+            border-radius: 20px;
+
+            font-size: 0.9em;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+        }
+
+        .skill:hover {
+
+            transform: scale(1.1);
+
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+
+        }
+
+        .download-btn {
+
+            display: inline-block;
+
+            padding: 10px 20px;
+
+            background: #00b4d8;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 5px;
+
+            margin-top: 20px;
+
+            text-decoration: underline;
+
+            text-underline-offset: 4px;
+
+            transition: background 0.3s ease;
+
+        }
+
+        .download-btn:hover {
+
+            background: linear-gradient(90deg, #00b4d8, #009cbf);
+
+        }
+
+        ul {
+
+            padding-left: 20px;
+
+        }
+
+        li {
+
+            margin: 5px 0;
+
+            position: relative;
+
+            transition: color 0.3s ease;
+
+        }
+
+        li:hover {
+
+            color: #00d4ff;
+
+        }
+
+        li::before {
+
+            content: '•';
+
+            position: absolute;
+
+            left: -20px;
+
+            color: #00b4d8;
+
+        }
+
+        .experience-item strong, .project-item strong, .education-item strong {
+
+            position: relative;
+
+            display: inline-block;
+
+        }
+
+        .experience-item strong::after, .project-item strong::after, .education-item strong::after {
+
+            content: '';
+
+            position: absolute;
+
+            width: 100%;
+
+            height: 2px;
+
+            bottom: -2px;
+
+            left: 0;
+
+            background: linear-gradient(90deg, #00d4ff, #00b4d8);
+
+        }
+
+        .experience-item small, .education-item small {
+
+            font-style: italic;
+
+            color: #b0c4de;
+
+        }
+
+        .project-item p, .summary p {
+
+            letter-spacing: 0.5px;
+
+            animation: slideIn 1s ease-in-out;
+
+        }
+
+        @keyframes fadeIn {
+
+            from { opacity: 0; transform: translateY(-20px); }
+
+            to { opacity: 1; transform: translateY(0); }
+
+        }
+
+        @keyframes slideIn {
+
+            from { opacity: 0; transform: translateX(-20px); }
+
+            to { opacity: 1; transform: translateX(0); }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <h1>John Doe</h1>
+
+            <p>DevOps Engineer</p>
+
+            <p>john.doe@example.com</p>
+
+            <p>Total Experience: 8+ Years</p>
+
+        </div>
+
+
+
+        <div class="section summary">
+
+            <h2>Professional Summary</h2>
+
+            <p>Experienced DevOps Engineer with over 8 years in automating, optimizing, and managing cloud infrastructure. Proficient in Docker, Kubernetes, AWS, Terraform, and bash scripting, with a proven track record of implementing CI/CD pipelines and container orchestration. Skilled in Linux server administration and infrastructure as code, delivering scalable and secure solutions.</p>
+
+        </div>
+
+
+
+        <div class="section">
+
+            <h2>Education</h2>
+
+            <div class="education-item">
+
+                <strong>B.S. in Computer Science</strong> - University of Tech City<br>
+
+                <small>2011-2015</small>
+
+            </div>
+
+            <div class="education-item">
+
+                <strong>Certified Kubernetes Administrator (CKA)</strong> - Linux Foundation<br>
+
+                <small>2019</small>
+
+            </div>
+
+            <div class="education-item">
+
+                <strong>AWS Certified Solutions Architect</strong> - Amazon Web Services<br>
+
+                <small>2020</small>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="section">
+
+            <h2>Skills</h2>
+
+            <div class="skills-list">
+
+                <span class="skill">Docker</span>
+
+                <span class="skill">Kubernetes</span>
+
+                <span class="skill">AWS</span>
+
+                <span class="skill">CI/CD</span>
+
+                <span class="skill">Linux</span>
+
+                <span class="skill">Terraform</span>
+
+                <span class="skill">Bash</span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="section">
+
+            <h2>Experience</h2>
+
+            <div class="experience-item">
+
+                <strong>Nexlify Tech</strong> - DevOps Engineer<br>
+
+                <small>2021-Present</small>
+
+                <ul>
+
+                    <li>Automated deployments using Jenkins and Docker for microservices.</li>
+
+                    <li>Wrote Terraform scripts to provision AWS infrastructure (EC2, S3, RDS).</li>
+
+                    <li>Managed Kubernetes clusters on AWS EKS for scalable applications.</li>
+
+                    <li>Developed bash scripts for log rotation and cleanup on Linux servers.</li>
+
+                    <li>Configured AWS ECS for container orchestration of production apps.</li>
+
+                    <li>Implemented CI/CD pipelines with GitHub Actions for zero-downtime deployments.</li>
+
+                    <li>Optimized AWS costs by using Terraform modules for resource management.</li>
+
+                    <li>Monitored systems with Prometheus and Grafana, integrated with AWS.</li>
+
+                    <li>Secured Linux servers with custom bash scripts for firewall rules.</li>
+
+                    <li>Migrated on-prem applications to AWS using Docker containers.</li>
+
+                    <li>Automated backups with AWS S3 using bash scripts and cron jobs.</li>
+
+                    <li>Used Terraform to manage VPC, subnets, and security groups.</li>
+
+                    <li>Deployed applications on EKS using Helm charts for consistency.</li>
+
+                    <li>Created bash scripts for system health checks and alerting.</li>
+
+                    <li>Managed IAM roles and policies with Terraform for least privilege access.</li>
+
+                    <li>Set up AWS Lambda functions for serverless automation tasks.</li>
+
+                </ul>
+
+            </div>
+
+            <div class="experience-item">
+
+                <strong>CloudWave Solutions</strong> - Cloud Engineer<br>
+
+                <small>2018-2021</small>
+
+                <ul>
+
+                    <li>Designed AWS architecture for scalable and fault-tolerant applications.</li>
+
+                    <li>Used Terraform to deploy EC2 instances with auto-scaling groups.</li>
+
+                    <li>Wrote bash scripts for automated server setup and configuration.</li>
+
+                    <li>Managed Docker containers on AWS ECS for stateless applications.</li>
+
+                    <li>Configured AWS CloudWatch for monitoring and alerting on metrics.</li>
+
+                    <li>Automated S3 bucket creation and policies with Terraform.</li>
+
+                    <li>Hardened Linux servers for security compliance (CIS benchmarks).</li>
+
+                    <li>Created bash scripts for backup automation to AWS S3.</li>
+
+                    <li>Set up AWS RDS with Terraform for MySQL and PostgreSQL databases.</li>
+
+                    <li>Migrated legacy applications to Docker containers for portability.</li>
+
+                    <li>Used AWS CLI with bash scripts for resource management automation.</li>
+
+                    <li>Configured VPC peering with Terraform for cross-account access.</li>
+
+                    <li>Monitored Linux servers with custom bash scripts for disk usage.</li>
+
+                    <li>Deployed static websites on S3 with Terraform and CloudFront.</li>
+
+                    <li>Managed AWS Auto Scaling for high availability and cost efficiency.</li>
+
+                    <li>Optimized EC2 performance with bash scripts for resource tuning.</li>
+
+                </ul>
+
+            </div>
+
+            <div class="experience-item">
+
+                <strong>SysCore Innovations</strong> - System Administrator<br>
+
+                <small>2015-2018</small>
+
+                <ul>
+
+                    <li>Managed Linux servers (CentOS, Ubuntu) for internal applications.</li>
+
+                    <li>Wrote bash scripts for user management and account provisioning.</li>
+
+                    <li>Automated backups with cron jobs and bash scripts to NFS.</li>
+
+                    <li>Configured Apache on Linux for hosting internal web applications.</li>
+
+                    <li>Monitored server performance with bash Scripts for CPU
+
+
+
+ and memory.</li>
+
+                    <li>Set up NFS for shared storage across Linux servers.</li>
+
+                    <li>Managed user permissions with bash scripts for access control.</li>
+
+                    <li>Deployed Docker for internal tools and development environments.</li>
+
+                    <li>Created bash scripts for log analysis and error reporting.</li>
+
+                    <li>Hardened Linux servers with security patches and firewall rules.</li>
+
+                    <li>Automated system updates with bash scripts and cron jobs.</li>
+
+                    <li>Configured SSH for secure access with key-based authentication.</li>
+
+                    <li>Monitored disk usage with custom bash scripts and alerts.</li>
+
+                    <li>Set up LAMP stack on Linux servers for web applications.</li>
+
+                    <li>Managed cron jobs for scheduled tasks like backups and updates.</li>
+
+                    <li>Optimized server performance with bash scripts for resource tuning.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="section">
+
+            <h2>Projects</h2>
+
+            <div class="project-item">
+
+                <strong>CI/CD Pipeline</strong><br>
+
+                <p>Built an automated deployment system using Jenkins, Docker, and bash scripts. Integrated with AWS CodePipeline for zero-downtime deployments. Automated container builds with Docker and used bash scripts for environment setup on Linux servers.</p>
+
+            </div>
+
+            <div class="project-item">
+
+                <strong>Container Orchestration</strong><br>
+
+                <p>Implemented Kubernetes clusters on AWS EKS using Terraform for infrastructure provisioning. Wrote bash scripts to automate scaling and monitoring of pods. Configured Linux nodes for optimal performance with Docker runtime.</p>
+
+            </div>
+
+            <div class="project-item">
+
+                <strong>Infrastructure Automation</strong><br>
+
+                <p>Used Terraform to provision AWS resources like EC2, S3, and RDS. Developed bash scripts for Linux server configuration, including user setup, package installation, and security hardening. Automated AWS resource tagging with Terraform.</p>
+
+            </div>
+
+            <a href="/download-pdf" class="download-btn">Download PDF Resume</a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
