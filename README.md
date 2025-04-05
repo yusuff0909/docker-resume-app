@@ -1,5 +1,40 @@
 # Flask Resume App
 
+A modern, responsive portfolio website built with Flask, featuring a clean and professional design. This application serves as a dynamic resume/portfolio that showcases professional experience, skills, and projects in an interactive web format.
+
+## Application Overview
+
+### Features
+- Responsive design that works on all devices
+- Modern UI with smooth animations and transitions
+- Print-friendly layout for PDF generation
+- Progressive Web App (PWA) capabilities
+- Accessibility-compliant design
+- SEO-optimized structure
+
+### Components
+- `app.py`: Flask application entry point
+- `templates/index.html`: Main HTML template with embedded CSS
+- `static/manifest.json`: PWA manifest file
+- `requirements.txt`: Python dependencies
+- `Dockerfile`: Container configuration
+
+### Technologies Used
+- **Backend**: Python Flask
+- **Frontend**: HTML5, CSS3
+- **Design**: 
+  - CSS Grid and Flexbox for layout
+  - CSS Custom Properties for theming 
+  - CSS Animations and Transitions
+- **Optimization**:
+  - CSS containment for performance
+  - Lazy loading for images
+  - Font optimization
+  - Content caching
+- **Development**:
+  - Python virtual environment
+  - Docker containerization
+
 ## Ubuntu Deployment
 ```bash
 # Install dependencies
@@ -19,7 +54,7 @@ pip install -r requirements.txt
 
 # Run the app
 export FLASK_APP=app.py
-python -m flask run --host=0.0.0.0 --port=5000
+python -m flask run --host=0.0.0.0 --port=5001
 ```
 
 ## Alpine Linux Deployment
@@ -41,7 +76,7 @@ pip install -r requirements.txt
 
 # Run the app
 export FLASK_APP=app.py
-python -m flask run --host=0.0.0.0 --port=5000
+python -m flask run --host=0.0.0.0 --port=5001
 ```
 
 ## Red Hat Enterprise Linux Deployment
@@ -63,7 +98,7 @@ pip install -r requirements.txt
 
 # Run the app
 export FLASK_APP=app.py
-python -m flask run --host=0.0.0.0 --port=5000
+python -m flask run --host=0.0.0.0 --port=5001
 ```
 
 ## Amazon Linux 2 Deployment
@@ -85,7 +120,7 @@ pip install -r requirements.txt
 
 # Run the app
 export FLASK_APP=app.py
-python -m flask run --host=0.0.0.0 --port=5000
+python -m flask run --host=0.0.0.0 --port=5001
 ```
 
 ## Docker Deployment
@@ -94,7 +129,7 @@ python -m flask run --host=0.0.0.0 --port=5000
 docker build -t flask-resume-app .
 
 # Run the container
-docker run -d -p 5000:5000 flask-resume-app
+docker run -d -p 5001:5001 flask-resume-app
 ```
 
 ## Dockerfile
@@ -108,9 +143,9 @@ COPY . .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 5000
+EXPOSE 5001
 
 ENV FLASK_APP=app.py
 
-CMD ["python", "-m", "flask", "run", "--host=0.0.0.0", "--port=5000"]
+CMD ["python", "-m", "flask", "run", "--host=0.0.0.0", "--port=5001"]
 ```
