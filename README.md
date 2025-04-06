@@ -41,9 +41,9 @@ A modern, responsive portfolio website built with Flask, featuring a clean and p
 sudo apt update
 sudo apt install python3 python3-pip
 
-# Create project directory
-mkdir devops-portfolio
-cd devops-portfolio
+# Clone project directory
+git clone https://github.com/kserge2001/docker-resume-app.git
+cd docker-resume-app
 
 # Create virtual environment
 python3 -m venv venv
@@ -63,9 +63,9 @@ python -m flask run --host=0.0.0.0 --port=5001
 apk update
 apk add python3 py3-pip
 
-# Create project directory
-mkdir devops-portfolio
-cd devops-portfolio
+# Clone project directory
+git clone https://github.com/kserge2001/docker-resume-app.git
+cd docker-resume-app
 
 # Create virtual environment
 python3 -m venv venv
@@ -85,9 +85,9 @@ python -m flask run --host=0.0.0.0 --port=5001
 sudo dnf update
 sudo dnf install python3 python3-pip
 
-# Create project directory
-mkdir devops-portfolio
-cd devops-portfolio
+# Clone project directory
+git clone https://github.com/kserge2001/docker-resume-app.git
+cd docker-resume-app
 
 # Create virtual environment
 python3 -m venv venv
@@ -107,9 +107,9 @@ python -m flask run --host=0.0.0.0 --port=5001
 sudo yum update
 sudo yum install python3 python3-pip
 
-# Create project directory
-mkdir devops-portfolio
-cd devops-portfolio
+# Clone project directory
+git clone https://github.com/kserge2001/docker-resume-app.git
+cd docker-resume-app
 
 # Create virtual environment
 python3 -m venv venv
