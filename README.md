@@ -124,15 +124,8 @@ python -m flask run --host=0.0.0.0 --port=5001
 ```
 
 ## Docker Deployment
-```bash
-# Build the Docker image
-docker build -t flask-resume-app .
 
-# Run the container
-docker run -d -p 5001:5001 flask-resume-app
-```
-
-## Dockerfile
+# Dockerfile
 Create a file named `Dockerfile` with the following content:
 ```dockerfile
 FROM python:3.9-slim
@@ -148,4 +141,12 @@ EXPOSE 5001
 ENV FLASK_APP=app.py
 
 CMD ["python", "-m", "flask", "run", "--host=0.0.0.0", "--port=5001"]
+```
+# docker commands
+```bash
+# Build the Docker image
+docker build -t flask-resume-app .
+
+# Run the container
+docker run -d -p 5001:5001 flask-resume-app
 ```
