@@ -21,6 +21,6 @@ jobs:
     - name: Log in to Docker Hub
       run: docker login -u ${{ secrets.REGISTRY_USERNAME }} -p ${{ secrets.REGISTRY_PASSWORD }}
     - name: Tag the Docker image with tag
-      run: docker tag my-image-name:${{ github.run_number }} ${ secrets.REGISTRY_USERNAME }/my-image-name:${{ github.run_number }}
+      run: docker tag ${ secrets.REGISTRY_USERNAME }/my-image-name:${{ github.run_number }}
     - name: Push the Docker image with tag
       run: docker push ${ secrets.REGISTRY_USERNAME }/my-image-name:${{ github.run_number }}
